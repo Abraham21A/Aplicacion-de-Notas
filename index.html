@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Aplicacion-Notas CRUD</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <h1>Aplicacion-Notas CRUD</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <div class="container mt-5" id="body">
+      <div class="main row justify-content-center">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+
+              <form action="" id="Note-form">
+
+                <div class="form-group mb-3">
+                  <label for="firstNote">Note</label>
+                  <input class="form-control" id="firstNote" placeholder="Write your Note" type="text">
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="firstDate">Date</label>
+                  <input class="form-control" id="firstDate" type="date">
+                </div>
+
+                <div class="col-8">
+                  <button type="submit" class="btn btn-outline-primary">Add +</button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Table Notes Add -->
+        <div class="col-12 col-md-8 mt-5">
+          <table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Note</th>
+                <th scope="col">Date</th>
+                <th scope="col">Options</th>
+              </tr>
+            </thead>
+            <tbody class="note-list" id="tbody">
+              <tr>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos.</td>
+                <td>20/10/22</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-footer">
+      <footer>
+        <p>© 2022 Jorge Abraham Alatorre Garcia - Aplicacion de Notas (CRUD)</p>
+      </footer>
+    </div>
+    
+
+    
+    <script src="app.js"></script>
+  </body>
+</html>
