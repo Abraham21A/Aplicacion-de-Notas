@@ -39,8 +39,8 @@ function leer() {
         <td>${nota}</td>
         <td>${fecha}</td>
         <td>
-          <button onclick="editar('${nota}')" class="btn btn-warning btn-sm mb-2 edit">Edit</button>
-          <button onclick="eliminar('${nota}')" class="btn btn-danger btn-sm mb-2">Delete</button>
+          <button onclick="editar('${nota}')" class="btn btn-warning btn-sm mb-2 edit">Editar</button>
+          <button onclick="eliminar('${nota}')" class="btn btn-danger btn-sm mb-2">Eliminar</button>
         </td>
       </tr>
     ` 
@@ -75,7 +75,7 @@ function editar(nota) {
 
                 </form>
 
-                <button class="btn btn-outline-success " onclick="actualizar('${i}')">Update</button>
+                <button class="btn btn-outline-success " onclick="actualizar('${i}')">Actualizar</button>
                 <button class="btn btn-outline-primary " onclick="vistaPrincipal()">Cancelar</button>
               </div>
             </div>
@@ -125,17 +125,17 @@ function vistaPrincipal() {
             <form action="" id="Note-form">
 
               <div class="form-group mb-3">
-                <label for="firstNote">Note</label>
-                <input class="form-control" id="firstNote" placeholder="Write your Note" type="text">
+                <label for="firstNote">Nota</label>
+                <input class="form-control" id="firstNote" placeholder="Escribe tu Nota" type="text">
               </div>
 
               <div class="form-group mb-3">
-                <label for="firstDate">Date</label>
+                <label for="firstDate">Fecha</label>
                 <input class="form-control" id="firstDate" type="date">
               </div>
 
               <div class="col-8">
-                <button type="submit" class="btn btn-outline-primary">Add +</button>
+                <button type="submit" class="btn btn-outline-primary">Agregar +</button>
               </div>
 
             </form>
@@ -148,9 +148,9 @@ function vistaPrincipal() {
         <table class="table table-striped table-bordered table-light">
           <thead>
             <tr>
-              <th scope="col">Note</th>
-              <th scope="col">Date</th>
-              <th scope="col">Options</th>
+              <th scope="col">Nota</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Opciones</th>
             </tr>
           </thead>
           <tbody class="note-list" id="tbody">
